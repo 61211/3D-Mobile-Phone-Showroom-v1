@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>iPhone X 展示</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
+
+        /* 关闭按钮样式 */
+        #close-container {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 10;
+        }
+
+        #close {
+            width: 80px;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(6px);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #close:hover {
+            background: rgba(0, 0, 0, 0.7);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 标签元素（CSS2DObject 绑定） -->
+    <div id="tag" style="display: none;">iPhone X</div>
+    <div id="tDTag" style="display: none; backface-visibility: hidden;">iPhone X</div>
+
+    <!-- 关闭按钮 -->
+    <div id="close-container">
+        <div id="close">关闭效果</div>
+    </div>
+
+    <script src="./17/17.4/index.js" type="module"></script>
+</body>
+
+</html>
